@@ -1,6 +1,6 @@
 from nicegui import ui
+import os
 # import gettext
-
 
 # TODO: find out how pot works and generates the .po file for French
 
@@ -10,13 +10,70 @@ from nicegui import ui
 # setup in French
 # lang1.install()
 
-file = open("ingredients.md", "r", encoding="utf-8")
-ui.markdown(file.read())
+ui.page_title('Lasagnapp')
+
+# app styling: font, bg color and step font size
+ui.add_head_html('''
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans">
+    <style>
+      body {
+        font-family: 'Noto Sans', serif;
+        font-size : 18px;
+      }
+    </style>
+''')
+ui.query('body').style('background-color: #ffeedd')
+ui.add_css('.q-stepper__title { font-size: 20px; color: black}')
 
 title = 'La vraie bonne recette de lasagnes'
 
-with ui.header().classes() as header:
-    ui.label(text=title).style('color: white; font-size: 200%; font-weight: 300')
+with ui.header().style('background-color: white') as header: #
+    ui.label(text=title).style('color: #CF2435; font-size: 150%; font-weight: bold')
+
+# file = open("ingredients.md", "r", encoding="utf-8")
+# ui.markdown(file.read())
+
+# with ui.row():
+#     with ui.card().tight():
+#         with ui.card_section():
+#             ui.label("Sauce bolognaise")
+#             ui.markdown("this is a test ")
+#     with ui.card().tight():
+#         with ui.card_section():
+#             ui.label("Sauce béchamel")
+#             ui.markdown("this is a test")
+#     with ui.card().tight():
+#         with ui.card_section():
+#             ui.label("Lasagnes")
+#             ui.markdown("this is a test")
+
+ui.label("Ingrédients: (pour 6 à 8 personnes)").style('font-weight: bold')
+
+# Based on Quasar so use props to set component styling
+ui.tree([
+    {'id': ' Sauce bolognaise', 'children': [{'id': '1 kg de viande: 600g filet américain pur boeuf et 400 g de haché veau + porc'},
+                                    {'id': '2 oignons'},
+                                    {'id': '1 à 2 carottes'},
+                                    {'id': '1200 ml de sauce tomate'},
+                                    {'id': 'Sel'},
+                                    {'id': 'Poivre'},
+                                    {'id': 'Un petit verre de lait'}]},
+], label_key='id').props("dense no-connectors") # icon='looks_one'
+
+ui.tree([
+    {'id': ' Sauce béchamel', 'children': [{'id': '50 cl de lait'},
+                                    {'id': '50 g de beurre'},
+                                    {'id': '50 g de farine'},
+                                    {'id': 'Noix de muscade'}]},
+], label_key='id').props("dense no-connectors") # icon='looks_two'
+
+ui.tree([
+    {'id': ' Lasagnes', 'children': [{'id': 'Un paquet de lasagnes avec une vingtaine de feuilles'},
+                                    {'id': '150 g de mozzarella'},
+                                    {'id': '100 g de parmesan'}]},
+], label_key='id').props("simple dense no-connectors") # icon='restaurant_menu icon='looks_3'
+
 
 with ui.stepper().props('vertical').classes('w-full') as stepper:
     with ui.step("Préparation de la sauce bolognaise"):
@@ -58,4 +115,8 @@ with ui.stepper().props('vertical').classes('w-full') as stepper:
             ui.button('Fin', on_click=lambda: ui.notify('Mama mia !', type='positive'))
             ui.button('Retour', on_click=stepper.previous).props('flat')
 
-ui.run()
+with ui.footer().style('background-color: white') as footer:
+    ui.label('Copyright (c) 2024 Fabien Rica').style('color: black')
+    ui.link('Merci à Vittorio', 'https://vittorio.gent').style('color: black')
+
+ui.run(reload='FLY_ALLOC_ID' not in os.environ, favicon='🤌')
