@@ -14,22 +14,33 @@ ui.page_title('Lasagnapp')
 
 # app styling: font, bg color and step font size
 ui.add_head_html('''
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans" rel="stylesheet">
     <style>
-      body {
-        font-family: 'Noto Sans', serif;
-        font-size : 18px;
+        header {
+            font-family: 'Handlee', serif;
+            font-color : black;
+            font-size : 38px;
+        }
+        body {
+            font-family: 'Noto Sans', serif;
+            font-size : 16px;
       }
     </style>
 ''')
-ui.query('body').style('background-color: #ffeedd')
-ui.add_css('.q-stepper__title { font-size: 20px; color: black}')
+
+# in case you want to change body background
+# ui.query('body').style('background-color: #ffeedd')
+ui.add_css('.q-stepper__title { font-size: 18px; color: black}')
+ui.colors(primary='#BD2B26')
 
 title = 'La vraie bonne recette de lasagnes'
 
-with ui.header().style('background-color: white') as header: #
-    ui.label(text=title).style('color: #CF2435; font-size: 150%; font-weight: bold')
+with ui.header().style('background-color: white') as header:  #
+    ui.label(text=title).style("color: black; font-weight: bold")
+    ui.separator().props('color=black size=2px')
 
 # file = open("ingredients.md", "r", encoding="utf-8")
 # ui.markdown(file.read())
@@ -52,28 +63,28 @@ ui.label("Ingrédients: (pour 6 à 8 personnes)").style('font-weight: bold')
 
 # Based on Quasar so use props to set component styling
 ui.tree([
-    {'id': ' Sauce bolognaise', 'children': [{'id': '1 kg de viande: 600g filet américain pur boeuf et 400 g de haché veau + porc'},
-                                    {'id': '2 oignons'},
-                                    {'id': '1 à 2 carottes'},
-                                    {'id': '1200 ml de sauce tomate'},
-                                    {'id': 'Sel'},
-                                    {'id': 'Poivre'},
-                                    {'id': 'Un petit verre de lait'}]},
-], label_key='id').props("dense no-connectors") # icon='looks_one'
+    {'id': ' Sauce bolognaise',
+     'children': [{'id': '1 kg de viande: 600g filet américain pur boeuf et 400 g de haché veau + porc'},
+                  {'id': '2 oignons'},
+                  {'id': '1 à 2 carottes'},
+                  {'id': '1200 ml de sauce tomate'},
+                  {'id': 'Sel'},
+                  {'id': 'Poivre'},
+                  {'id': 'Un petit verre de lait'}]},
+], label_key='id').props("dense no-connectors").style("color: #8B4513")  # icon='looks_one'
 
 ui.tree([
     {'id': ' Sauce béchamel', 'children': [{'id': '50 cl de lait'},
-                                    {'id': '50 g de beurre'},
-                                    {'id': '50 g de farine'},
-                                    {'id': 'Noix de muscade'}]},
-], label_key='id').props("dense no-connectors") # icon='looks_two'
+                                           {'id': '50 g de beurre'},
+                                           {'id': '50 g de farine'},
+                                           {'id': 'Noix de muscade'}]},
+], label_key='id').props("dense no-connectors").style("color: #8B4513")  # icon='looks_two'
 
 ui.tree([
     {'id': ' Lasagnes', 'children': [{'id': 'Un paquet de lasagnes avec une vingtaine de feuilles'},
-                                    {'id': '150 g de mozzarella'},
-                                    {'id': '100 g de parmesan'}]},
-], label_key='id').props("simple dense no-connectors") # icon='restaurant_menu icon='looks_3'
-
+                                     {'id': '150 g de mozzarella'},
+                                     {'id': '100 g de parmesan'}]},
+], label_key='id').props("simple dense no-connectors").style("color: #8B4513")  # icon='restaurant_menu icon='looks_3'
 
 with ui.stepper().props('vertical').classes('w-full') as stepper:
     with ui.step("Préparation de la sauce bolognaise"):
@@ -88,8 +99,9 @@ with ui.stepper().props('vertical').classes('w-full') as stepper:
     with ui.step('Préparation de la sauce béchamel'):
         ui.label("Faites fondre le beurre dans une casserole sur feu vif. Lorsqu'il commence à mousser, "
                  "versez la farine d'un coup et fouettez vivement avec un fouet.")
-        ui.label("Quand le mélange est homogène, versez d'un coup le lait, et fouettez fortement pour éviter la formation "
-                 "de grumeaux. Salez, poivrez, et ajoutez la muscade.")
+        ui.label(
+            "Quand le mélange est homogène, versez d'un coup le lait, et fouettez fortement pour éviter la formation "
+            "de grumeaux. Salez, poivrez, et ajoutez la muscade.")
         ui.label("Continuez de fouetter sans jamais arrêter, jusqu'à ce que la béchamel commence à épaissir. "
                  "Lorsqu'elle est suffisamment épaisse, retirez-la du feu.")
         with ui.stepper_navigation():
@@ -97,10 +109,13 @@ with ui.stepper().props('vertical').classes('w-full') as stepper:
             ui.button('Retour', on_click=stepper.previous).props('flat')
     with ui.step("Dressage du plat"):
         ui.label("Mettez un peu de sauce tomate simple dans le fond du plat.")
-        ui.label("Précuisez quelques minutes les feuilles de lasagnes dans un grand saladier avec de l'eau très chaude.")
-        ui.label("Si votre béchamel est compacte, vous pouvez la liquéfier un peu avec un peu de lait avant de dresser.")
-        ui.label("Dressez chaque étage avec les feuilles de lasagnes (entre 4 et 5 selon votre plat), 3 cuillères à soupe de bolognaise, 3 cuillères à soupe de "
-                 "béchamel. Mélangez bien sur chaque étage en veillant à ce que les coins soient recouverts de sauce.")
+        ui.label(
+            "Précuisez quelques minutes les feuilles de lasagnes dans un grand saladier avec de l'eau très chaude.")
+        ui.label(
+            "Si votre béchamel est compacte, vous pouvez la liquéfier un peu avec un peu de lait avant de dresser.")
+        ui.label(
+            "Dressez chaque étage avec les feuilles de lasagnes (entre 4 et 5 selon votre plat), 3 cuillères à soupe de bolognaise, 3 cuillères à soupe de "
+            "béchamel. Mélangez bien sur chaque étage en veillant à ce que les coins soient recouverts de sauce.")
         ui.label("Mettez de la mozzarella et une pincée de parmesan avant de passer à l'étage suivant.")
         ui.label("Répetez l'opération 3 à 4 fois pour avoir des lasagnes bien hautes.")
         ui.label("Mettez le reste de béchamel et de bolognaise sur la couche supérieure avec le reste de parmesan.")
@@ -116,7 +131,7 @@ with ui.stepper().props('vertical').classes('w-full') as stepper:
             ui.button('Retour', on_click=stepper.previous).props('flat')
 
 with ui.footer().style('background-color: white') as footer:
-    ui.label('Copyright (c) 2024 Fabien Rica').style('color: black')
-    ui.link('Merci à Vittorio', 'https://vittorio.gent').style('color: black')
+    ui.markdown('Copyright (c) 2024 Fabien Rica 🇫🇷 & [Vittorio](https://vittorio.gent)  🇮🇹').style('color: black; '
+                                                                                                   'font-size : 14px')
 
 ui.run(reload='FLY_ALLOC_ID' not in os.environ, favicon='🤌')
