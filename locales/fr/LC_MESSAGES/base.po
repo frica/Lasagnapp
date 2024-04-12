@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-12 21:27+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\main.py:40
+msgid "Ingrédients: (pour 6 à 8 personnes)"
+msgstr ""
+
+#: .\main.py:46
+msgid "Sauce bolognaise"
+msgstr ""
+
+#: .\main.py:47
+msgid ""
+"1 kg de viande: 600g filet américain pur boeuf et 400 g de haché veau + porc"
+msgstr ""
+
+#: .\main.py:48
+msgid "2 oignons"
+msgstr ""
+
+#: .\main.py:49
+msgid "1 à 2 carottes"
+msgstr ""
+
+#: .\main.py:50
+msgid "1200 ml de sauce tomate"
+msgstr ""
+
+#: .\main.py:51
+msgid "Sel"
+msgstr ""
+
+#: .\main.py:52
+msgid "Poivre"
+msgstr ""
+
+#: .\main.py:53
+msgid "Un petit verre de lait"
+msgstr ""
+
+#: .\main.py:57
+msgid " Sauce béchamel"
+msgstr ""
+
+#: .\main.py:57
+msgid "50 cl de lait"
+msgstr ""
+
+#: .\main.py:58
+msgid "50 g de beurre"
+msgstr ""
+
+#: .\main.py:59
+msgid "50 g de farine"
+msgstr ""
+
+#: .\main.py:60
+msgid "Noix de muscade"
+msgstr ""
+
+#: .\main.py:64
+msgid "Lasagnes"
+msgstr ""
+
+#: .\main.py:64
+msgid "Un paquet de lasagnes avec une vingtaine de feuilles"
+msgstr ""
+
+#: .\main.py:65
+msgid "150 g de mozzarella"
+msgstr ""
+
+#: .\main.py:66
+msgid "100 g de parmesan"
+msgstr ""
+
+#: .\main.py:71
+msgid "Préparation de la sauce bolognaise"
+msgstr ""
+
+#: .\main.py:72
+msgid "Faites revenir les oignons dans de l'huile d'olive."
+msgstr ""
+
+#: .\main.py:73
+msgid "Ajoutez les carottes. Laissez revenir."
+msgstr ""
+
+#: .\main.py:74
+msgid ""
+"Ajoutez la viande et remuez bien le tout. Attendez que la viande soit cuite."
+msgstr ""
+
+#: .\main.py:75
+msgid ""
+"Ajoutez la sauce tomate, le sel, le poivre, les feuilles de basilic et le "
+"verre de lait."
+msgstr ""
+
+#: .\main.py:76
+msgid ""
+"Remuez et laissez cuire à 800W pendant 15 min puis à 600W pendant 30 min. Si "
+"votre feu est fort vous pouvez baisser jusqu'à 400W le dernier quart d'heure."
+msgstr ""
+
+#: .\main.py:79 .\main.py:89 .\main.py:106
+msgid "Suivant"
+msgstr ""
+
+#: .\main.py:80
+msgid "Préparation de la sauce béchamel"
+msgstr ""
+
+#: .\main.py:81
+msgid ""
+"Faites fondre le beurre dans une casserole sur feu vif. Lorsqu'il commence à "
+"mousser, versez la farine d'un coup et fouettez vivement avec un fouet."
+msgstr ""
+
+#: .\main.py:84
+msgid ""
+"Quand le mélange est homogène, versez d'un coup le lait, et fouettez "
+"fortement pour éviter la formation de grumeaux. Salez, poivrez, et ajoutez "
+"la muscade."
+msgstr ""
+
+#: .\main.py:86
+msgid ""
+"Continuez de fouetter sans jamais arrêter, jusqu'à ce que la béchamel "
+"commence à épaissir. Lorsqu'elle est suffisamment épaisse, retirez-la du feu."
+msgstr ""
+
+#: .\main.py:90 .\main.py:107 .\main.py:114
+msgid "Retour"
+msgstr ""
+
+#: .\main.py:91
+msgid "Dressage du plat"
+msgstr ""
+
+#: .\main.py:92
+msgid "Mettez un peu de sauce tomate simple dans le fond du plat."
+msgstr ""
+
+#: .\main.py:94
+msgid ""
+"Précuisez quelques minutes les feuilles de lasagnes dans un grand saladier "
+"avec de l'eau très chaude."
+msgstr ""
+
+#: .\main.py:96
+msgid ""
+"Si votre béchamel est compacte, vous pouvez la liquéfier un peu avec un peu "
+"de lait avant de dresser."
+msgstr ""
+
+#: .\main.py:98
+msgid ""
+"Dressez chaque étage avec les feuilles de lasagnes (entre 4 et 5 selon votre "
+"plat), 3 cuillères à soupe de bolognaise, 3 cuillères à soupe de béchamel. "
+"Mélangez bien sur chaque étage en veillant à ce que les coins soient "
+"recouverts de sauce."
+msgstr ""
+
+#: .\main.py:101
+msgid ""
+"Mettez de la mozzarella et une pincée de parmesan avant de passer à l'étage "
+"suivant."
+msgstr ""
+
+#: .\main.py:102
+msgid "Répetez l'opération 3 à 4 fois pour avoir des lasagnes bien hautes."
+msgstr ""
+
+#: .\main.py:104
+msgid ""
+"Mettez le reste de béchamel et de bolognaise sur la couche supérieure avec "
+"le reste de parmesan."
+msgstr ""
+
+#: .\main.py:108
+msgid "Cuisson"
+msgstr ""
+
+#: .\main.py:109
+msgid "Faites cuire 25 minutes à 200°C au four à chaleur tournante."
+msgstr ""
+
+#: .\main.py:110
+msgid "Ouvrez le four de temps en temps pour laisser échapper la vapeur."
+msgstr ""
+
+#: .\main.py:111
+msgid "Laissez refroidir 5 minutes et servir."
+msgstr ""
+
+#: .\main.py:113
+msgid "Fin"
+msgstr ""
+
+#: .\main.py:143
+msgid "La vraie bonne recette de lasagnes"
+msgstr ""

@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-12 21:27+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\main.py:40
+msgid "Ingrédients: (pour 6 à 8 personnes)"
+msgstr "Ingredients: (for 6 to 8 people)"
+
+#: .\main.py:46
+msgid "Sauce bolognaise"
+msgstr "Bolognese sauce"
+
+#: .\main.py:47
+msgid ""
+"1 kg de viande: 600g filet américain pur boeuf et 400 g de haché veau + porc"
+msgstr
+"1 kg of meat: 600g of pure beef American fillet and 400g of veal + pork minced (or 800g of classic minced meat beef + pork)"
+
+#: .\main.py:48
+msgid "2 oignons"
+msgstr "2 onions"
+
+#: .\main.py:49
+msgid "1 à 2 carottes"
+msgstr "1 to 2 carrots"
+
+#: .\main.py:50
+msgid "1200 ml de sauce tomate"
+msgstr "1200 ml of tomato sauce"
+
+#: .\main.py:51
+msgid "Sel"
+msgstr "Salt"
+
+#: .\main.py:52
+msgid "Poivre"
+msgstr "Pepper"
+
+#: .\main.py:53
+msgid "Un petit verre de lait"
+msgstr "A small glass of milk"
+
+#: .\main.py:57
+msgid " Sauce béchamel"
+msgstr "Béchamel sauce"
+
+#: .\main.py:57
+msgid "50 cl de lait"
+msgstr "50 cl of milk"
+
+#: .\main.py:58
+msgid "50 g de beurre"
+msgstr "50 g of butter"
+
+#: .\main.py:59
+msgid "50 g de farine"
+msgstr "50 g of flour"
+
+#: .\main.py:60
+msgid "Noix de muscade"
+msgstr "Nutmeg"
+
+#: .\main.py:64
+msgid "Lasagnes"
+msgstr "Lasagna"
+
+#: .\main.py:64
+msgid "Un paquet de lasagnes avec une vingtaine de feuilles"
+msgstr "A packet of lasagna with about twenty sheets"
+
+#: .\main.py:65
+msgid "150 g de mozzarella"
+msgstr "150 g of mozzarella"
+
+#: .\main.py:66
+msgid "100 g de parmesan"
+msgstr "100 g of parmesan"
+
+#: .\main.py:71
+msgid "Préparation de la sauce bolognaise"
+msgstr "Preparation of the bolognese sauce"
+
+#: .\main.py:72
+msgid "Faites revenir les oignons dans de l'huile d'olive."
+msgstr "Sauté the onions in olive oil."
+
+#: .\main.py:73
+msgid "Ajoutez les carottes. Laissez revenir."
+msgstr "Add the carrots. Let them sauté."
+
+#: .\main.py:74
+msgid ""
+"Ajoutez la viande et remuez bien le tout. Attendez que la viande soit cuite."
+msgstr "Add the meat and mix well. Wait until the meat is cooked."
+
+#: .\main.py:75
+msgid ""
+"Ajoutez la sauce tomate, le sel, le poivre, les feuilles de basilic et le "
+"verre de lait."
+msgstr "Add the tomato sauce, salt, pepper, basil leaves, and the glass of milk."
+
+#: .\main.py:76
+msgid ""
+"Remuez et laissez cuire à 800W pendant 15 min puis à 600W pendant 30 min. Si "
+"votre feu est fort vous pouvez baisser jusqu'à 400W le dernier quart d'heure."
+msgstr
+"Stir and let it cook at 800W for 15 minutes, then at 600W for 30 minutes. If your heat source is strong, you can reduce it to 400W for the last 15 minutes."
+
+#: .\main.py:79 .\main.py:89 .\main.py:106
+msgid "Suivant"
+msgstr "Next"
+
+#: .\main.py:80
+msgid "Préparation de la sauce béchamel"
+msgstr "Preparation of the béchamel sauce"
+
+#: .\main.py:81
+msgid ""
+"Faites fondre le beurre dans une casserole sur feu vif. Lorsqu'il commence à "
+"mousser, versez la farine d'un coup et fouettez vivement avec un fouet."
+msgstr
+"Melt the butter in a saucepan over high heat. When it starts to foam, add the flour all at once and whisk vigorously with a whisk."
+
+#: .\main.py:84
+msgid ""
+"Quand le mélange est homogène, versez d'un coup le lait, et fouettez "
+"fortement pour éviter la formation de grumeaux. Salez, poivrez, et ajoutez "
+"la muscade."
+msgstr "When the mixture is smooth, pour in the milk all at once, and whisk vigorously to avoid lumps. Add salt, pepper, and nutmeg."
+
+#: .\main.py:86
+msgid ""
+"Continuez de fouetter sans jamais arrêter, jusqu'à ce que la béchamel "
+"commence à épaissir. Lorsqu'elle est suffisamment épaisse, retirez-la du feu."
+msgstr "Continue whisking without stopping until the béchamel starts to thicken. When it's thick enough, remove it from the heat."
+
+#: .\main.py:90 .\main.py:107 .\main.py:114
+msgid "Retour"
+msgstr "Back"
+
+#: .\main.py:91
+msgid "Dressage du plat"
+msgstr "Assembly of the dish"
+
+#: .\main.py:92
+msgid "Mettez un peu de sauce tomate simple dans le fond du plat."
+msgstr "Place a little simple tomato sauce in the bottom of the dish."
+
+#: .\main.py:94
+msgid ""
+"Précuisez quelques minutes les feuilles de lasagnes dans un grand saladier "
+"avec de l'eau très chaude."
+msgstr "Pre-cook the lasagna sheets for a few minutes in a large bowl with very hot water."
+
+#: .\main.py:96
+msgid ""
+"Si votre béchamel est compacte, vous pouvez la liquéfier un peu avec un peu "
+"de lait avant de dresser."
+msgstr "If your béchamel sauce is thick, you can thin it out a bit with some milk before assembling."
+
+#: .\main.py:98
+msgid ""
+"Dressez chaque étage avec les feuilles de lasagnes (entre 4 et 5 selon votre "
+"plat), 3 cuillères à soupe de bolognaise, 3 cuillères à soupe de béchamel. "
+"Mélangez bien sur chaque étage en veillant à ce que les coins soient "
+"recouverts de sauce."
+msgstr "Assemble each layer with the lasagna sheets (between 4 and 5 depending on your dish), 3 tablespoons of bolognese sauce, and 3 tablespoons of béchamel sauce. Mix well on each layer, making sure the corners are covered with sauce."
+
+#: .\main.py:101
+msgid ""
+"Mettez de la mozzarella et une pincée de parmesan avant de passer à l'étage "
+"suivant."
+msgstr "Add mozzarella and a pinch of parmesan before moving on to the next layer."
+
+#: .\main.py:102
+msgid "Répetez l'opération 3 à 4 fois pour avoir des lasagnes bien hautes."
+msgstr "Repeat the process 3 to 4 times to create tall lasagna layers."
+
+#: .\main.py:104
+msgid ""
+"Mettez le reste de béchamel et de bolognaise sur la couche supérieure avec "
+"le reste de parmesan."
+msgstr "Put the remaining béchamel and bolognese sauce on the top layer with the remaining parmesan."
+
+#: .\main.py:108
+msgid "Cuisson"
+msgstr "Cooking"
+
+#: .\main.py:109
+msgid "Faites cuire 25 minutes à 200°C au four à chaleur tournante."
+msgstr "Bake for 25 minutes at 200°C in a convection oven."
+
+#: .\main.py:110
+msgid "Ouvrez le four de temps en temps pour laisser échapper la vapeur."
+msgstr "Open the oven occasionally to let steam escape."
+
+#: .\main.py:111
+msgid "Laissez refroidir 5 minutes et servir."
+msgstr "Allow to cool for 5 minutes before serving."
+
+#: .\main.py:113
+msgid "Fin"
+msgstr "End"
+
+#: .\main.py:143
+msgid "La vraie bonne recette de lasagnes"
+msgstr "The real good lasagnas recipe"
